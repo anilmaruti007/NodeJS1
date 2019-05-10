@@ -1,0 +1,28 @@
+C++ bindings finally passed to execute NodeJS
+process is an object. It's specific to chrome
+NodeJS uses an event driven, non-blocking I/O model that makes it light weight and efficient.
+fs.writeFile and fs.writeFileSync are methods to write something to the file.
+
+Initialise npm in root folder.
+npm i validator@10.8.0  -- to install npm module.
+process.argv -- arg vector
+
+yargs.version(string);
+yargs.command({
+	command:'add',
+	describe: 'Add a new note',
+	builder: {
+		title: {
+			describe: 'Note title',
+			demandOption :true,
+			type: 'string'
+			}
+			}
+	handler:function(){
+	console.log('Adding a new Note!')}
+});
+
+
+to debugg a file in NodeJS 
+-- node inspect app.js then goto chrome inspect 
+
